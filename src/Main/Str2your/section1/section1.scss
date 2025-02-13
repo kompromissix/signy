@@ -1,0 +1,52 @@
+.section {
+  padding: 50px;
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .faq-section {
+    margin-bottom: 30px;
+    text-align: left;
+
+    h2 span{
+      color: #1064E5;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 500; 
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.4;
+        margin-bottom: 10px;
+
+        span {
+          color: #1064E5;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .question-count {
+      color: black;
+    }
+  }
+
+
+}

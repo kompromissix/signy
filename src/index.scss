@@ -6,13 +6,20 @@
     font-family: "IBM Plex Sans", serif;
 }
 p{
-    font-size: 18px;
+    font-size: 18px; // У НАС ВСЕ p 18 ПИКСЕЛЕЙ, НЕ НАДО В РЕМАХ ПИСАТЬ
 }
 h1{
-    font-size: 40px;
+    font-size: 40px; // ТОЖЕ САМОЕ С h1
 }
 h5{
-    font-size: 12px;
+    font-size: 12px; // это мы используем для текста по типу "Signy /  Популярные вопросы"
     color: #06122460;
     font-weight: 400;
 }
+
+// можешь использовать такую структура для текста типа "Signy /  Популярные вопросы"
+// <section className='StrName'>
+//     <div>
+//         <h5>Signy / Про нас</h5>
+//     </div>
+// </section>
