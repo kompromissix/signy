@@ -1,6 +1,6 @@
 import './Footer.scss'
 import logo from './Footer_assets/Group7.png'
-
+import { Link } from "react-router-dom";
 export default function Footer(){
     return(
         <>
@@ -21,7 +21,7 @@ export default function Footer(){
                     </div>
                     <div>
                         <div>
-                            <p>Блог</p>
+                            <Link to="/Str4"><p>Блог</p></Link>
                             <p>Контакты</p>
                         </div>
                         <h5>Безпека сервісу</h5>

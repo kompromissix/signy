@@ -1,0 +1,50 @@
+.section1{
+    width: 1238px;
+    margin: 0 auto;
+    .blok-one{
+        width: 606px;
+        height: 133px;
+        
+        p{
+            font-size: 12px;
+            color: #061224;
+            text-decoration: none;
+        }
+
+        a{
+            font-size: 12px;
+            color: #061224;
+            text-decoration: none;
+        }
+
+        h1{
+            color: #061224;
+        }
+
+        .blok-two{
+            width: 397px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 20px;
+
+            a{
+                font-size: 12px;
+                width: auto;
+                height: 24px;
+                background-color: #E5E5E5;
+                border-radius: 23px;
+                text-align: center;
+            }
+        }
+    }
+
+   .div-center{
+     width: 1238px;
+     height: 1566px;
+     display: flex;
+     
+   }
+
+}
