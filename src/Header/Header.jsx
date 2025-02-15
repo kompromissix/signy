@@ -18,7 +18,7 @@ function Header() {
           <div className="links">
             <Link to="/Str1"><a href="" >ПРО НАС</a></Link>
             <Link to="/Str2"><a href="" >ЦЕНЫ</a></Link>
-            <a href="" >КОНТАКТЫ</a>
+            <Link to="/Str3"><a href="" >КОНТАКТЫ</a></Link>
           </div>
         </div>
 

@@ -3,16 +3,13 @@ import cheliki from './Str1_assets/Rectangle.png'
 import grad from './Str1_assets/Group1502.png'
 import woman from './Str1_assets/Rectangle388.png'
 import rospis from './Str1_assets/image14.png'
-
+import StrName from '../StrName/StrName'
+import Swiper_block from '../Swiper/Swiper'
 export default function Str1(){
     return(
         <>
             <main className='Str1'>
-                <section className='StrName'>
-                    <div>
-                        <h5>Signy / Про нас</h5>
-                    </div>
-                </section>
+                <StrName/>
                 <section className='background1'>
                     <div>
                         <h1>Страница про нас</h1>
@@ -54,7 +51,7 @@ export default function Str1(){
                     </div>
                 </section>
                 <section className='slider_sponsor'>
-                    <br />
+                    <Swiper_block/>
                 </section>
                 <section className='background2'>
                     <div>

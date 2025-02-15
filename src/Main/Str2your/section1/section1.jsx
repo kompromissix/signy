@@ -1,12 +1,11 @@
 import './section1.scss';
+import StrName from '../../StrName/StrName';
 
 function Section1() {
   return (
     <section className="section">
       <div className="faq-container">
-        <div>
-          <h5>Signy / Популярные вопросы</h5>
-        </div>
+        <StrName/>
         <h1 className="faq-title">Популярные вопросы и ответы на них</h1>
 
         <div className="faq-section">

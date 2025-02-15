@@ -1,21 +1,30 @@
 .section2 {
-    background-color: #e8f5ff;
+    background-color: #D8F1F0;
     padding: 20px;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     .container {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       padding: 20px;
-  
+      
+      h3{
+        font-size: 40px;
+        font-weight: 400;
+      }
       .title {
-        font-size: 24px;
         margin-bottom: 10px;
         text-align: center;
         color: #061224;
       }
   
       .subtitle {
-        font-size: 16px;
+
         margin-bottom: 20px;
         text-align: center;
         color: #061224;
@@ -24,24 +33,24 @@
       .form {
         display: flex;
         flex-direction: column;
+        align-items: center;
   
         .form-group {
           margin-bottom: 15px;
-  
+          width: 420px;
           .label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
+            font-size: 18px;
             color: black;
+            padding-left: 22px;
           }
   
-          .input,
-          .textarea {
+          .input, .textarea {
             width: 100%;
             padding: 10px;
+            padding-left: 22px;
             border: 1px solid #ced4da;
             border-radius: 20px;
-            font-size: 16px;
+            font-size: 18px;
             color: #495057;
             outline: none;
 
@@ -55,12 +64,13 @@
         }
   
         .button {
-          background-color: #1e3a8a;
+          background-color: #1064E5;
           color: #fff;
           padding: 12px 24px;
           border: none;
           border-radius: 20px;
-          font-size: 16px;
+          font-size: 14px;
+          width: 217px;
         }
       }
     }
