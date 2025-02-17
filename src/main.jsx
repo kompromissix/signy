@@ -8,6 +8,7 @@ import Str1 from './Main/Str1my/Str1';
 import Str2 from './Main/Str2your/Str2';
 import Str3 from './Main/Str3my/Str3';
 import Str4 from './Main/Str4your/Str4';
+import Str5 from './Main/Str5my/Str5';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/Str2" element={<Str2 />} /> 
         <Route path="/Str3" element={<Str3 />} /> 
         <Route path="/Str4" element={<Str4 />} /> 
+        <Route path="/Str5" element={<Str5 />} /> 
       </Routes>
       <Footer />
     </HashRouter>

@@ -23,6 +23,7 @@ export default function Footer(){
                         <div>
                             <Link to="/Str4"><p>Блог</p></Link>
                             <p>Контакты</p>
+                            <Link to="/Str5">Видео инструкции</Link>
                         </div>
                         <h5>Безпека сервісу</h5>
                     </div>
