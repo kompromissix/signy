@@ -1,6 +1,7 @@
 .section1{
     width: 1238px;
     margin: 0 auto;
+
     .blok-one{
         width: 606px;
         height: 133px;
@@ -19,6 +20,7 @@
 
         h1{
             color: #061224;
+            padding-top: 24px;
         }
 
         .blok-two{
@@ -27,12 +29,12 @@
             display: flex;
             align-items: center;
             justify-content: left;
+            padding-top: 24px;
             gap: 20px;
 
             a{
                 font-size: 12px;
-                width: auto;
-                height: 24px;
+                padding: 4px 10px;
                 background-color: #E5E5E5;
                 border-radius: 23px;
                 text-align: center;
@@ -44,7 +46,81 @@
      width: 1238px;
      height: 1566px;
      display: flex;
+     font-size: 18px;
+     color: #061224;
+     gap: 50px;
+     .div-right{
+        p{
+            padding: 27px 0px;
+        }
+     }
+     .div-left{
+        p{
+            padding: 27px 0px;
+        }
+     }
+   }
+
+
+   .icon{
+     width: 785px;
+     height: 260px;
+     margin: 0 auto;   
      
+     .p{
+        font-size: 22px;
+        color: #061224;
+        text-align: center;
+     }
+
+     .logo{
+        display: flex;
+        justify-content: center;
+        width: 785px;
+        height: 54px;
+        align-items: center;
+        padding-top: 20px;
+
+     }
+
+     .logo-center{
+        width: 785px;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding-top: 20px;
+
+        .logo-right{
+            p{
+                width: 270px;
+                height: 70px;
+                font-size: 22px;
+                color: #061224;
+            }
+            a{
+                font-size: 14px;
+                color: #061224;
+                text-decoration: none;
+            }
+        }
+        .logo-left{
+            p{
+                width: 270px;
+                height: 70px;
+                font-size: 22px;
+                color: #1064E5;
+            }
+            a{
+                font-size: 14px;
+                color: #061224;
+                text-decoration: none;
+            
+            }
+        }
+     }
+
    }
 
 }
