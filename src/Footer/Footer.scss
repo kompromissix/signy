@@ -13,10 +13,13 @@ footer{
         h5{
             color: #ffffff60;
         }
+        .underline{
+            text-decoration: none;
+        }
         p{
             color: white;
             font-size: 14px;
-            
+
         }
         >div{
             display: flex;
@@ -27,6 +30,7 @@ footer{
             height: 138px;
             width: 242px;
             >p{
+                
                 color: #ffffff80;
             }
         }

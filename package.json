@@ -31,5 +31,17 @@
     "globals": "^15.14.0",
     "sass-embedded": "^1.83.4",
     "vite": "^6.1.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N0RBI475/signy-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N0RBI475/signy-master/issues"
+  },
+  "homepage": "https://github.com/N0RBI475/signy-master#readme"
 }

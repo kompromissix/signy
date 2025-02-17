@@ -7,7 +7,7 @@ export default function Footer(){
             <footer>
                 <div>
                     <div>
-                        <img src={logo} alt="" />
+                        <img src={logo} alt=""/>
                         <h5>© 2020 Signy</h5>
                     </div>
                     <div>
@@ -21,7 +21,7 @@ export default function Footer(){
                     </div>
                     <div>
                         <div>
-                            <Link to="/Str4"><p>Блог</p></Link>
+                            <Link to="/Str4" className="underline "><p>Блог</p></Link>
                             <p>Контакты</p>
                         </div>
                         <h5>Безпека сервісу</h5>
