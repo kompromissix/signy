@@ -1,0 +1,170 @@
+.Str6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .background1{
+        width: 1232px;
+        height: 488px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 422px;
+            >div{
+                width: 458px;
+                height: 412px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                h2{
+                    font-weight: 600;
+                    font-size: 40px;
+                    width: 376px;
+                }
+                >div{
+                    width: 316px;
+                    height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    >div{
+                        background-color: #E5E5E5;
+                        border-radius: 23px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 24px;
+                        a{
+                            font-size: 12px;
+                            padding-left: 14px;
+                            padding-right: 14px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+                >a{
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    .background2{
+        width: 1232px;
+        height: 1850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .tabs {
+            width: 582px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tabss_div{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .tabss{
+            width: 207px;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tab {
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+            color: black;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .tab.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #1064E5;
+        }
+        .swiperss{
+            width: 100%;
+        }
+        .blog_div{
+            width: 100%;
+            >div{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                >a{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 357px;
+                    height: 546px;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        width: 370px;
+                        height: 370px;
+                    }
+                    >div{
+                        height: 162px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h4{
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        h3{
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+
+                        >div{
+                            width: 189px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            >div{
+                                background-color: #E5E5E5;
+                                border-radius: 23px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 24px;
+                                a{
+                                    font-size: 12px;
+                                    padding-left: 14px;
+                                    padding-right: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import woman from './Str1_assets/Rectangle388.png'
 import rospis from './Str1_assets/image14.png'
 import StrName from '../StrName/StrName'
 import Swiper_block from '../Swiper/Swiper'
+import Subscribe from '../Subscribe/Subscribe'
 export default function Str1(){
     return(
         <>
@@ -66,6 +67,7 @@ export default function Str1(){
                         
                     </div>
                 </section>
+                <Subscribe/>
             </main>
         </>
     )

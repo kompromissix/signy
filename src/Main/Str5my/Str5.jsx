@@ -1,7 +1,8 @@
 import './Str5.scss'
 import { ways } from './data'
 import { ways2 } from './photo'
-
+import { Link } from "react-router-dom";
+import Subscribe from '../Subscribe/Subscribe';
 function Video(frame){
     return(
         <>
@@ -13,25 +14,25 @@ function Video(frame){
         </>
     )
 }
-function Blog(photo){
+export function Blog(photo){
     return(
         <>
-            <div className='photo_div'>
+            <Link to="/Str4" className='photo_div'>
                 <img src={photo.img} alt="" />
                 <div>
                     <h4>{photo.h4}</h4>
                     <h3>{photo.h3}</h3>
                     <div>
                         <div>
-                            <p>{photo.p2}</p>
+                            <a>{photo.p2}</a>
                         </div>
                         <div>
-                            <p>{photo.p3}</p>
+                            <a>{photo.p3}</a>
                         </div>
                     </div>
                     <p>{photo.p}</p>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }
@@ -68,6 +69,7 @@ export default function Str5(){
                         ))}
                     </div>
                 </section>
+                <Subscribe/>
             </main>
         </>
     )
