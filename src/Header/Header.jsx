@@ -7,9 +7,9 @@ function Header() {
   return (
     <nav className="navbar">
       <div className="container">
-        <a href="" className="logo">
+        <Link to="/Str7" className="logo">
           <img src={logo} alt="" />
-        </a>
+        </Link>
 
         <div className="menu">
           <div className="phone">

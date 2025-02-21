@@ -21,7 +21,7 @@ export default function Footer(){
                     </div>
                     <div>
                         <div>
-                            <Link to="/Str4" className="underline "><p>Блог</p></Link>
+                            <Link to="/Str6" className="underline "><p>Блог</p></Link>
                             <p>Контакты</p>
                             <Link to="/Str5">Видео инструкции</Link>
                         </div>

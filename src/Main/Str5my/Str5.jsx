@@ -3,6 +3,7 @@ import { ways } from './data'
 import { ways2 } from './photo'
 import { Link } from "react-router-dom";
 import Subscribe from '../Subscribe/Subscribe';
+
 function Video(frame){
     return(
         <>
