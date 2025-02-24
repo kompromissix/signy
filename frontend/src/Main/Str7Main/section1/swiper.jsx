@@ -1,11 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import styles from './swiper.module.scss'; // Импорт локальных стилей
 
-import Section1 from '../section1/swip1/section1';
-import Section2 from '../section1/swip2/section2';
-import Section3 from '../section1/swip3/section3';
+import Section1 from './swip1/section1';
+import Section2 from './swip2/section2';
+import Section3 from './swip3/section3';
 
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
