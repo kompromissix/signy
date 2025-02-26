@@ -14,12 +14,9 @@ function Swiper_header(prop){
         <div className='div-center'>
           <div className='div-left' key={prop.index}>
             <h1>Цифровой документооборот в три этапа:</h1>
-            <div><p><span>{prop.span1}</span>{prop.p1} - <span>{prop.span2}</span>{prop.p2} - <span>{prop.span3}</span>{prop.p3}</p></div>
-            <div className='text-bd'>
-              <h1>{prop.name}</h1>
-              <p>{prop.namebottom}</p>
-              <p>Загрузка данных...</p>
-            </div>
+            <div><h2><span>{prop.span1}</span>{prop.p1} - <span>{prop.span2}</span>{prop.p2} - <span>{prop.span3}</span>{prop.p3}</h2></div>
+            <h2>{prop.name}</h2>
+            <p>{prop.namebottom}</p>
             <button>ПОПРОБОВАТЬ БЕСПЛАТНО</button>
           </div>
           <div className='div-right'>
