@@ -17,7 +17,7 @@ function Interesting(int){
     return(
         <>
             <div key={int.index}>
-                <img src={zagluska} alt="" />
+                <img src={int.img} alt="" />
                 <div>
                     <h4>{int.data}</h4>
                     <h3>{int.namebottom}</h3>

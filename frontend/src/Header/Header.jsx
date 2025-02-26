@@ -17,14 +17,10 @@ function Header() {
           </Link>
         </div>
         <div className="center">
-          <div className="links">
-            <a href="" >0 800 750 643 <span><img src={svg}/></span></a>
-            <Link to="/Str1"><a href="" >ПРО НАС<span><img src={svg}/></span></a></Link>
-            <Link to="/Str2"><a href="" >ЦЕНЫ</a></Link>
-            <Link to="/Str3"><a href="" >КОНТАКТЫ</a></Link>
-          </div>
-        </div>
-        <div className="right">
+          <a href="" >0 800 750 643 <span><img src={svg}/></span></a>
+          <Link to="/Str1"><a href="" >ПРО НАС<span><img src={svg}/></span></a></Link>
+          <Link to="/Str2"><a href="" >ЦЕНЫ</a></Link>
+          <Link to="/Str3"><a href="" >КОНТАКТЫ</a></Link>
           <button className="login">ВХОД</button>
           <button className="register">РЕГИСТРАЦИЯ</button>
           <a href="">РУС<span><img src={svg}/></span></a>

@@ -19,7 +19,7 @@ const Section3 = () => {
   }, []);
 
   return (
-    <section className='section1'>
+    <section className='sectionS'>
       <div className='div-center'>
         <div className='div-left'>
           <h1>Цифровой документооборот в три этапа:</h1>
