@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './login.scss'
+import krest from './img/krest.png'
 
 function Login({ onClose }) {
   const [email, setEmail] = useState('');
@@ -13,7 +15,7 @@ function Login({ onClose }) {
         password,
       });
       console.log(response.data);
-      localStorage.setItem('token', response.data.token); // Сохраняем токен
+      localStorage.setItem('token', response.data.token); 
       alert('Вход выполнен успешно!');
       onClose();
     } catch (err) {
@@ -23,24 +25,24 @@ function Login({ onClose }) {
   };
 
   return (
+    <>
     <div className="modal">
       <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Пароль"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+        <div className='zg'>
+          <p>Вход в аккаунт</p>
+          <img onClick={onClose} src={krest}/>
+        </div>
+        
+        <div className='email'>
+          <p>Почта*:</p>
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+          <p>Пароль*:</p>
+          <input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        </div>
         <button type="submit">Войти</button>
-        <button type="button" onClick={onClose}>Закрыть</button>
       </form>
     </div>
+    </>
   );
 }
 

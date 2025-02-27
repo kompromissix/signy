@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './register.scss'
+import krest from './img/krest.png'
 
 function Register({ onClose }) {
   const [username, setUsername] = useState('');
@@ -24,30 +26,29 @@ function Register({ onClose }) {
   };
 
   return (
-    <div className="modal">
+    <>
+    <div className="modal1">
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Имя пользователя"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Пароль"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+        <div className='zg1'>
+          <p>Зарегистрировать аккаунт</p>
+          <img onClick={onClose} src={krest}/>
+        </div>
+        <div className='email1'>
+          <p>Имя*:</p>
+          <input type="text" placeholder="Имя пользователя" value={username} onChange={(e) => setUsername(e.target.value)}/>
+        </div>
+        <div className='email1'>
+          <p>Почта*:</p>
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        </div>
+        <div className='email1'>
+          <p>Пароль*:</p>
+          <input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        </div>
         <button type="submit">Зарегистрироваться</button>
-        <button type="button" onClick={onClose}>Закрыть</button>
       </form>
     </div>
+    </>
   );
 }
 
