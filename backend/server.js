@@ -38,7 +38,24 @@ app.post('/api/register', async (req, res) => {
     res.status(500).json({ error: 'Ошибка при регистрации' });
   }
 });
+app.post('/api/register/form', async (req, res) => {
+  const { username, email, phone, question } = req.body;
 
+  if (!username || !email || !phone || !question) {
+    return res.status(400).json({ error: 'Все поля обязательны' });
+  }
+
+  try {
+    const result = await pool.query(
+      'INSERT INTO form (username, email, phone, question) VALUES ($1, $2, $3, $4) RETURNING *',
+      [username, email, phone, question]
+    );
+    res.status(201).json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Ошибка при регистрации' });
+  }
+});
 // Вход
 app.post('/api/login', async (req, res) => {
   const { email, password } = req.body;
@@ -66,6 +83,28 @@ app.post('/api/login', async (req, res) => {
     res.status(500).json({ error: 'Ошибка при входе' });
   }
 });
+
+app.get('/users', async ( req, res) => {
+    try{
+        const addTodos = await pool.query("SELECT * FROM users")
+        res.json(addTodos.rows)
+    }
+    catch(err){
+        console.error(err.message)
+    }
+})
+
+// один юзер
+app.get('/users/:id', async ( req, res) => {
+  try{
+    const id = req.params.id;
+      const addTodos = await pool.query(`SELECT * FROM users where id=${id}`)
+      res.json(addTodos.rows)
+  }
+  catch(err){
+      console.error(err.message)
+  }
+})
 
 // Остальные эндпоинты
 app.get('/api/tovar', async (req, res) => {
