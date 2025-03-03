@@ -11,7 +11,7 @@ import Str4 from './Main/Str4your/Str4';
 import Str5 from './Main/Str5my/Str5';
 import Str6 from './Main/Str6together/Str6';
 import Str7 from './Main/Str7Main/Str7';
-import Str8 from './Main/Str8Vovaloh/Str8';
+import Str8 from './Modal/user/Str8';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

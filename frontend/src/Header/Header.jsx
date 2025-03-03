@@ -5,11 +5,12 @@ import logo from './Header_assets/Group7.png';
 import svg from './Header_assets/Vector36.png';
 import Register from '../Modal/register/register'; 
 import Login from '../Modal/login/login';
+import User from '../Modal/user/Str8';
 
 function Header() {
   const [showRegister, setShowRegister] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
-
+  const [showUser, setShowUser] = useState(false);
   return (
     <nav className="navbar">
       <div className="container">
@@ -25,10 +26,12 @@ function Header() {
           <Link to="/Str3"><a href="">КОНТАКТЫ</a></Link>
           <button className="login" onClick={() => setShowLogin(true)}>ВХОД</button>
           <button className="register" onClick={() => setShowRegister(true)}>РЕГИСТРАЦИЯ</button>
+          <button className="user" onClick={() => setShowUser(true)}>USER</button>
           <a href="">РУС<span><img src={svg} alt="" /></span></a>
         </div>
       </div>
 
+      {showUser && <User onClose={() => setShowUser(false)} />}
       {showRegister && <Register onClose={() => setShowRegister(false)} />}
       {showLogin && <Login onClose={() => setShowLogin(false)} />}
     </nav>

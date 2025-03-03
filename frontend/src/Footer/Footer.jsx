@@ -40,6 +40,7 @@ export default function Footer(){
                         <p>+380 44 338 86 43</p>
                     </div>
                 </div>
+
             </footer>
         </>
     )
