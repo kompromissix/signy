@@ -13,7 +13,7 @@ export default function User({ onClose }) {
       const token = localStorage.getItem('token');
 
       if (!token) {
-        setError('Unauthorized: Токен отсутствует');
+        setError('');
         return;
       }
 
@@ -49,12 +49,19 @@ export default function User({ onClose }) {
     fetchUserData();
   }, []);
 
+  const handleLogout = () => {
+    setUserData(null);
+    localStorage.removeItem('token');
+    onClose();
+    window.location.reload();
+  };
+
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div>{error}</div>;
   }
 
   if (!userData) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
@@ -67,6 +74,10 @@ export default function User({ onClose }) {
             <p><span>Имя пользователя:</span> {userData[0] ? userData[0].username : 'N/A'}</p>
             <p><span>Почта:</span> {userData[0] ? userData[0].email : 'N/A'}</p>
           </div>
+          
+        </div>
+        <div className='button'>
+          <button type="button" onClick={handleLogout}>Выход</button>
         </div>
       </div>
     </div>

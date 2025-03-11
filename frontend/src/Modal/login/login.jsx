@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './login.scss'
-import krest from './img/krest.png'
+import './login.scss';
+import krest from './img/krest.png';
 
-function Login({ onClose }) {
+function Login({ onClose, onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,6 +18,8 @@ function Login({ onClose }) {
       localStorage.setItem('token', response.data.token); 
       alert('Вход выполнен успешно!');
       onClose();
+      onLogin(); // Вызываем onLogin для обновления состояния авторизации
+      window.location.reload(); // Перезагружаем страницу (опционально)
     } catch (err) {
       console.error(err);
       alert('Ошибка входа');
@@ -26,22 +28,21 @@ function Login({ onClose }) {
 
   return (
     <>
-    <div className="modal">
-      <form onSubmit={handleSubmit}>
-        <div className='zg'>
-          <p>Вход в аккаунт</p>
-          <img onClick={onClose} src={krest}/>
-        </div>
-        
-        <div className='email'>
-          <p>Почта*:</p>
-          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-          <p>Пароль*:</p>
-          <input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)}/>
-        </div>
-        <button type="submit">Войти</button>
-      </form>
-    </div>
+      <div className="modal">
+        <form onSubmit={handleSubmit}>
+          <div className='zg'>
+            <p>Вход в аккаунт</p>
+            <img onClick={onClose} src={krest} alt="Закрыть" />
+          </div>
+          <div className='email'>
+            <p>Почта*:</p>
+            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <p>Пароль*:</p>
+            <input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
+          </div>
+          <button type="submit">Войти</button>
+        </form>
+      </div>
     </>
   );
 }

@@ -18,7 +18,8 @@
       height: auto;
       display: flex;
       flex-direction: column;
-  
+      justify-content: space-between;
+      height: 300px;
       .mtrnt {
         align-self: flex-end;
         background-color: transparent;
@@ -29,13 +30,12 @@
         font-size: 30px;
         color: #061224;
         text-align: center;
-        margin-bottom: 20px;
       }
   
       .danse {
         background-color: white;
         padding: 20px;
-
+        border-radius: 10px;
         .user {
           span{
             font-size: 18px;
@@ -48,5 +48,19 @@
           }
         }
       }
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >button{
+          background-color: #1064E5;
+          color: #fff;
+          padding: 12px 24px;
+          border: none;
+          border-radius: 20px;
+          font-size: 14px;
+          width: 217px;
+        }
+      }
     }
-  }
+}
